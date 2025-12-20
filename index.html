@@ -12,7 +12,7 @@
 
 <div class="w-full max-w-[380px] flex flex-col relative">
 
-<div class="w-full h-[680px] sm:h-[740px] bg-white rounded-[30px] shadow-xl overflow-hidden border flex flex-col rounded-lg">
+<div class="w-full h-[680px] sm:h-[740px] bg-white rounded-[30px] shadow-xl overflow-hidden border flex flex-col rounded-xl">
 
   <!-- Header с категориями -->
    <div class="bg-blue-600 text-white p-3 sm:p-4 flex flex-col relative">
@@ -47,10 +47,14 @@
     </span>
 
     <!-- Search input -->
-    <<input
+    <input
   type="search"
-  class="w-full py-1.5 pl-10 pr-4 text-sm text-white rounded-xl bg-black/50"
->
+  id="searchInput"
+  placeholder="Поиск"
+  class="w-full py-1.5 pl-10 pr-4 text-sm 
+         placeholder-white/80
+         rounded-xl bg-black/50
+         focus:outline-none focus:ring-2 focus:ring-white/40">
   </div>
 </div>
 
