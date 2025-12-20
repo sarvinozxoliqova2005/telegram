@@ -7,12 +7,12 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 flex justify-center items-start sm:items-center min-h-screen p-2">
+<body class="bg-gray-100 flex justify-center items-start sm:items-center min-h-screen p-4">
    
 
-    <div class=" text-white p-2 flex flex-col relative">
+<div class="w-full max-w-[380px] flex flex-col relative">
 
-<div class="max-w-[500px] w-full h-[100svh] sm:h-[844px] bg-white rounded-[28px] sm:rounded-[35px] shadow-xl overflow-hidden border flex flex-col">
+<div class="w-full h-[680px] sm:h-[740px] bg-white rounded-[30px] shadow-xl overflow-hidden border flex flex-col rounded-lg">
 
   <!-- Header с категориями -->
    <div class="bg-blue-600 text-white p-3 sm:p-4 flex flex-col relative">
@@ -47,11 +47,10 @@
     </span>
 
     <!-- Search input -->
-    <input
+    <<input
   type="search"
-  id="searchInput"
-  placeholder="Поиск"
-  class="w-full py-2 sm:py-2.5 pl-10 pr-4 text-white rounded-xl bg-black/50 placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+  class="w-full py-1.5 pl-10 pr-4 text-sm text-white rounded-xl bg-black/50"
+>
   </div>
 </div>
 
@@ -75,7 +74,7 @@
   </div>
 
   <!-- Chat list -->
-<div id="mainContainer" class="overflow-y-auto flex-1 divide-y p-2 pb-24">
+<div id="mainContainer" class="flex-1 overflow-y-auto divide-y p-2">
 
     <!-- Chat item 1 -->
     <div class="flex items-center gap-3 p-4 hover:bg-gray-100 cursor-pointer">
@@ -116,7 +115,7 @@
   </div>
 
   <!-- Bottom navigation -->
-   <div class="h-16 border-t border-black flex justify-around items-center bg-white px-2 sm:px-6">
+   <div class="h-14 border-t flex justify-around items-center bg-white">
    <button class="text-black nav-btn border border-black rounded-full px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base" data-tab="contacts">Контакты</button>
    <button class="text-black nav-btn border border-black rounded-full px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base" data-tab="calls">Звонки</button>
    <button class="text-black nav-btn border border-black rounded-full px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base" data-tab="chats">Чаты</button>
