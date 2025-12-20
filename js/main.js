@@ -385,3 +385,22 @@ addMenu.querySelector('button:nth-child(1)').addEventListener('click', () => {
 
 // Initial render
 renderContacts();
+
+
+
+
+
+
+
+// "+" bosilganda menu ochiladi
+addBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  addMenu.classList.toggle('hidden');
+});
+
+// tashqariga bosilganda yopiladi
+document.addEventListener('click', (e) => {
+  if (!addMenu.contains(e.target) && !addBtn.contains(e.target)) {
+    addMenu.classList.add('hidden');
+  }
+});
